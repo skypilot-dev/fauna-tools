@@ -1,0 +1,9 @@
+{
+  "name": "fauna-tools",
+  "version": "0.1.0",
+  "description": "Scripts & utilities for working with FaunaDB",
+  "main": "lib/index.js",
+  "repository": "https://github.com/skypilot/fauna-tools",
+  "author": "William Thorsen <william@skypilot.io>",
+  "license": "MIT"
+}
