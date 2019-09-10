@@ -1,0 +1,1 @@
+module.exports = require('@skypilot/toolchain/lint-staged.config');

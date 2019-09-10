@@ -8,5 +8,12 @@
   "license": "MIT",
   "devDependencies": {
     "@skypilot/toolchain": "^0.3.2"
+  },
+  "scripts": {
+    "build": "yarn run check-types && yarn test && yarn run build && yarn run generate-typings",
+    "check-types": "tsc",
+    "generate-typings": "tsc --project tsconfig.generate-typings.json",
+    "prepublishOnly": "yarn run check-types && yarn test && yarn run build && yarn run generate-typings",
+    "test": "jest"
   }
 }
