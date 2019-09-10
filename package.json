@@ -15,5 +15,8 @@
     "generate-typings": "tsc --project tsconfig.generate-typings.json",
     "prepublishOnly": "yarn run check-types && yarn test && yarn run build && yarn run generate-typings",
     "test": "jest"
+  },
+  "dependencies": {
+    "faunadb": "^2.8.0"
   }
 }
