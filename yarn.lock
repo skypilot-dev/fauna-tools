@@ -941,10 +941,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@skypilot/toolchain@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@skypilot/toolchain/-/toolchain-0.3.2.tgz#165c97bb0b6cf91b833ac46bf4f025d3fedfe530"
-  integrity sha512-f30WE62f72JaVW2lZrzMVg12JPIKxkBIRTdowZaCzr6KhyizV2MYb7dj2itHAsXAa31eew/A9AERU4Ovs/potQ==
+"@skypilot/toolchain@^0.3.6":
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/@skypilot/toolchain/-/toolchain-0.3.6.tgz#017acee6f8b3016ef6f82afef7d0980b1f298588"
+  integrity sha512-5UJ/MjPSuTcY1FEItkwnyGcghFfkIZ9ZrhvullAc9iiUE9MvyRlf50V7Oup3ZOpXo+32QheWSyg9C9cqwCI7Xg==
   dependencies:
     "@babel/cli" "^7.6.0"
     "@babel/core" "^7.6.0"
