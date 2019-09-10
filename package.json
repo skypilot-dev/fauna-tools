@@ -5,5 +5,8 @@
   "main": "lib/index.js",
   "repository": "https://github.com/skypilot/fauna-tools",
   "author": "William Thorsen <william@skypilot.io>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@skypilot/toolchain": "^0.3.2"
+  }
 }
