@@ -7,7 +7,10 @@
   "author": "William Thorsen <william@skypilot.io>",
   "license": "MIT",
   "devDependencies": {
-    "@skypilot/toolchain": "^0.3.2"
+    "@skypilot/toolchain": "^0.3.1",
+    "@types/ini": "^1.3.30",
+    "@types/tmp": "^0.1.0",
+    "tmp": "^0.1.0"
   },
   "scripts": {
     "build": "yarn run check-types && yarn test && yarn run build && yarn run generate-typings",
@@ -17,6 +20,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "faunadb": "^2.8.0"
+    "faunadb": "^2.8.0",
+    "ini": "^1.3.5"
   }
 }
