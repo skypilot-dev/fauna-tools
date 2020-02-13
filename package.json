@@ -1,11 +1,14 @@
 {
-  "name": "fauna-tools",
+  "name": "@skypilot/fauna-tools",
   "version": "0.1.0",
   "description": "Scripts & utilities for working with FaunaDB",
   "main": "lib/index.js",
-  "repository": "https://github.com/skypilot/fauna-tools",
-  "author": "William Thorsen <william@skypilot.io>",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skypilotcc/fauna-tools.git"
+  },
+  "author": "William Thorsen <william@thorsen.dev>",
+  "license": "ISC",
   "devDependencies": {
     "@skypilot/toolchain": "^3.3.1",
     "@types/ini": "^1.3.30",
@@ -38,5 +41,17 @@
   "files": [
     "/lib"
   ],
-  "types": "lib/index.d.ts"
+  "types": "lib/index.d.ts",
+  "private": false,
+  "bugs": {
+    "url": "https://github.com/skypilotcc/fauna-tools/issues"
+  },
+  "homepage": "https://github.com/skypilotcc/fauna-tools#readme",
+  "keywords": [
+    "fauna",
+    "faunadb",
+    "graphql",
+    "tools",
+    "utilities"
+  ]
 }
