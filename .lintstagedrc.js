@@ -1,1 +1,3 @@
-module.exports = require('@skypilot/toolchain/lint-staged.config');
+const { lintStagedConfigurator } = require('@skypilot/toolchain');
+
+module.exports = lintStagedConfigurator();

@@ -1,5 +1,5 @@
 module.exports = {
   extends: [
-    './node_modules/@skypilot/toolchain/eslint.config',
+    './node_modules/@skypilot/toolchain/lib/configs/eslint.js',
   ],
 };

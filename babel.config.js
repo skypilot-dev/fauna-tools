@@ -1,3 +1,3 @@
 module.exports = {
-  extends: '@skypilot/toolchain/babel.config',
+  extends: './node_modules/@skypilot/toolchain/lib/configs/babel.js',
 };

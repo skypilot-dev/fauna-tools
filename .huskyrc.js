@@ -1,1 +1,3 @@
-module.exports = require('@skypilot/toolchain/husky.config');
+const { huskyConfigurator } = require('@skypilot/toolchain');
+
+module.exports = huskyConfigurator();
