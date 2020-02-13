@@ -33,6 +33,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@skypilot/sugarbowl": "^1.5.0",
     "commander": "^4.1.1",
     "faunadb": "^2.11.1",
     "ini": "^1.3.5"
