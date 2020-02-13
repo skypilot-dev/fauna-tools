@@ -1,2 +1,3 @@
-/* Utility types */
-export type Maybe<T> = T | null | undefined;
+import { Integer } from '@skypilot/common-types';
+
+export type Timestamp = Integer;

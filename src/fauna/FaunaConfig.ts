@@ -1,13 +1,7 @@
-/* Built-in modules */
 import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { homedir } from 'os';
-
-/* External modules */
 import ini from 'ini';
-
-/* Internal modules */
-import { Maybe } from '../lib/types';
-
+import { Maybe } from '@skypilot/common-types';
 
 /* -- Typings -- */
 interface CreateFaunaConfig {
@@ -25,10 +19,8 @@ export interface FaunaEndpointConfig {
   secret: string;
 }
 
-
 /* -- Constants -- */
 const CONFIG_FILE_PATH = `${homedir()}/.fauna-shell`;
-
 
 /* -- Classes -- */
 /* Class for managing the Fauna configuratino file */
