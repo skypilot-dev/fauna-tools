@@ -37,6 +37,7 @@
   "dependencies": {
     "@skypilot/sugarbowl": "^1.5.0",
     "commander": "^4.1.1",
+    "fauna-shell": "^0.11.0",
     "faunadb": "^2.11.1",
     "ini": "^1.3.5",
     "js-yaml": "^3.13.1",
