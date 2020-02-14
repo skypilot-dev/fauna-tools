@@ -8,6 +8,7 @@ const scriptFilenames = [
   'delete-db-and-key.sh',
   'deploy.sh',
   'migrate.sh',
+  'upload-schema.sh',
 ];
 
 /* Resolve a path relative to the project root */
