@@ -7,7 +7,8 @@
     "create-db-and-key": "./lib/scripts/create-db-and-key.sh",
     "delete-db-and-key": "./lib/scripts/delete-db-and-key.sh",
     "fauna-deploy": "./lib/scripts/deploy.sh",
-    "fauna-migrate": "./lib/scripts/migrate.sh"
+    "fauna-migrate": "./lib/scripts/migrate.sh",
+    "fauna-upload-schema": "./lib/scripts/upload-schema.sh"
   },
   "repository": {
     "type": "git",
