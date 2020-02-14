@@ -1,4 +1,4 @@
-import { deleteEndpointConfig } from '../src/fauna/deleteEndpointConfig';
+import { deleteEndpointConfig } from '../fauna/deleteEndpointConfig';
 import { helpFlags } from '../helpers';
 
 const usage = 'Usage: delete-endpoint-config.ts ENDPOINT_ALIAS [PATH_TO_FAUNA_CONFIG]';
