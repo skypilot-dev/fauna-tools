@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "description": "Scripts & utilities for working with FaunaDB",
   "main": "lib/index.js",
+  "bin": {
+    "create-db-and-key": "./lib/scripts/create-db-and-key.sh",
+    "delete-db-and-key": "./lib/scripts/delete-db-and-key.sh",
+    "fauna-deploy": "./lib/scripts/deploy.sh",
+    "fauna-migrate": "./lib/scripts/migrate.sh"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skypilotcc/fauna-tools.git"
@@ -10,15 +16,18 @@
   "author": "William Thorsen <william@thorsen.dev>",
   "license": "ISC",
   "devDependencies": {
+    "@skypilot/common-types": "^1.1.0",
     "@skypilot/toolchain": "^3.3.1",
     "@types/ini": "^1.3.30",
+    "@types/js-yaml": "^3.12.2",
+    "@types/lodash.get": "^4.4.6",
     "@types/tmp": "^0.1.0",
     "tmp": "^0.1.0"
   },
   "scripts": {
     "all-ci-checks": "yarn run all-cq-checks && yarn run build",
     "all-cq-checks": "yarn run typecheck && yarn run lint --quiet && yarn test",
-    "build": "rm -rf lib && yarn run compile-ts",
+    "build": "rm -rf lib && yarn run copy-scripts-to-lib && yarn run compile-ts",
     "check-types": "tsc",
     "ci": "yarn run all-ci-checks",
     "compile-ts": "babel ./src --out-dir ./lib --extensions .ts --ignore '**/__tests__/*' --ignore '**/*.d.ts' && yarn run generate-typings",
@@ -32,9 +41,13 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+    "@skypilot/sugarbowl": "^1.5.0",
     "commander": "^4.1.1",
+    "fauna-shell": "^0.11.0",
     "faunadb": "^2.11.1",
-    "ini": "^1.3.5"
+    "ini": "^1.3.5",
+    "js-yaml": "^3.13.1",
+    "lodash.get": "^4.4.2"
   },
   "publishConfig": {
     "access": "public"
