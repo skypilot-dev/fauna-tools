@@ -1,14 +1,8 @@
-/* eslint-disable no-console */
-
-/* -- Imports -- */
-/* External imports */
+/* eslint-disable no-console, @typescript-eslint/ban-ts-ignore, @typescript-eslint/no-unused-vars */
+import { Integer } from '@skypilot/common-types';
 import { Client, query as q } from 'faunadb';
-
-/* Internal imports */
-import { Integer, Timestamp } from '../lib/types';
-
+import { Timestamp } from '../lib/types';
 import { FaunaConfig } from './FaunaConfig';
-
 
 /* -- Typings -- */
 interface DeleteKeyOptions {
@@ -70,8 +64,9 @@ async function getKeyById(client: Client, keyId: string): Promise<Key> {
 }
 
 /* Get all keys matching a list of IDs. */
+// @ts-ignore
 async function getKeysById(client: Client, keyIds: string[]): Promise<Key[]> {
-  const keyPromises = keyIds.map((keyId) => getKeyById(client, keyId).then());
+  const keyPromises = keyIds.map(keyId => getKeyById(client, keyId).then());
   return await Promise.all(keyPromises);
 }
 
