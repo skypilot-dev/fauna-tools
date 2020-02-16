@@ -3,9 +3,6 @@
 FAUNADB_ORIGIN=https://graphql.fauna.com
 SCHEMA_FILE=schema.graphql
 
-# Change to the directory of this script so that relative paths resolve correctly
-cd "$(dirname $0)"/.. || exit
-
 if [[ $# -lt 1 || $# -gt 2 ]]; then
   echo "Usage: $0 DB_NAME [--override]"
   exit 0
