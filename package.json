@@ -12,9 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skypilotcc/fauna-tools.git"
+    "url": "git+https://github.com/skypilot-dev/fauna-tools.git"
   },
-  "author": "William Thorsen <william@thorsen.dev>",
+  "author": {
+    "email": "wthorsen@skypilot.dev",
+    "name": "William Thorsen"
+  },
   "license": "ISC",
   "devDependencies": {
     "@skypilot/common-types": "^1.4.3",
@@ -62,9 +65,9 @@
   "types": "lib/index.d.ts",
   "private": false,
   "bugs": {
-    "url": "https://github.com/skypilotcc/fauna-tools/issues"
+    "url": "https://github.com/skypilot-dev/fauna-tools/issues"
   },
-  "homepage": "https://github.com/skypilotcc/fauna-tools#readme",
+  "homepage": "https://github.com/skypilot-dev/fauna-tools#readme",
   "keywords": [
     "fauna",
     "faunadb",
