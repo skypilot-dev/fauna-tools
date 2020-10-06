@@ -11,4 +11,5 @@ release:
   publish: true
 prerelease:
   access: 'public'
+  latestStage: 'alpha'
   publish: true
