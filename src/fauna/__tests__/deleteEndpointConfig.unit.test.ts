@@ -23,7 +23,7 @@ secret=secret-key-2
 `;
 
 const configFilePath = tmp.fileSync().name;
-writeFileSync(configFilePath, faunaConfigAsText)
+writeFileSync(configFilePath, faunaConfigAsText);
 
 describe('deleteEndpointConfig()', () => {
   it('can delete a section of the Fauna config by endpoint alias', () => {

@@ -61,7 +61,7 @@ export class FaunaConfig {
 
   readFile(): void {
     const configAsText = readFileSync(this.filePath, 'utf-8');
-    this._config = ini.parse(configAsText)
+    this._config = ini.parse(configAsText);
   }
 
   removeEndpoint(endpointAlias: string): boolean {
