@@ -49,28 +49,33 @@
     "prepublishOnly": "yarn run typecheck && yarn run lint --quiet && yarn test && yarn run build",
     "publish:default": "yarn publish --non-interactive",
     "tc": "yarn run typecheck",
-    "test": "jest",
+    "test": "jest --config jest.standalone.config.js",
+    "test:all": "jest --config jest.config.js",
+    "test:int": "jest --config jest.integration.config.js",
     "typecheck": "tsc"
   },
   "dependencies": {
     "@oclif/config": "^1.17.0",
-    "@oclif/plugin-help": "^3.2.0",
-    "@skypilot/sugarbowl": "^1.24.2",
-    "commander": "^6.1.0",
-    "fauna-shell": "^0.11.5",
-    "faunadb": "^3.0.1",
-    "ini": "^1.3.5",
-    "js-yaml": "^3.14.0",
+    "@oclif/plugin-help": "^3.2.2",
+    "@skypilot/sugarbowl": "^3.3.0",
+    "commander": "^7.2.0",
+    "fauna-shell": "^0.12.3",
+    "faunadb": "^4.1.3",
+    "ini": "^2.0.0",
+    "js-yaml": "^4.0.0",
     "lodash.get": "^4.4.2"
   },
   "devDependencies": {
-    "@skypilot/common-types": "^2.1.3",
-    "@skypilot/toolchain": "^5.1.0",
+    "@skypilot/common-types": "^2.2.2",
+    "@skypilot/toolchain": "^5.2.3",
     "@types/ini": "^1.3.30",
-    "@types/js-yaml": "^3.12.5",
+    "@types/js-yaml": "^4.0.0",
     "@types/lodash.get": "^4.4.6",
     "@types/tmp": "^0.2.0",
     "tmp": "^0.2.1"
+  },
+  "engines": {
+    "node": ">= 10"
   },
   "publishConfig": {
     "access": "public"

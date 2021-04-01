@@ -1,7 +1,11 @@
-/* eslint-disable no-console, @typescript-eslint/ban-ts-comment, @typescript-eslint/no-unused-vars */
+/* eslint-disable camelcase */
+/* eslint-disable no-console */
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { Integer } from '@skypilot/common-types';
 import { Client, query as q } from 'faunadb';
+
 import { Timestamp } from '../lib/types';
 import { FaunaConfig } from './FaunaConfig';
 

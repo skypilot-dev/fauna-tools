@@ -1,3 +1,5 @@
+/* eslint-disable no-console */
+
 /* Internal modules */
 import { FaunaConfig } from './FaunaConfig';
 
